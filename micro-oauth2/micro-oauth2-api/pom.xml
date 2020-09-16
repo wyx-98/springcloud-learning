@@ -10,6 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>micro-oauth2-api</artifactId>
+    <description>受保护的API服务，用户鉴权通过后可以访问该服务，不整合Spring Security+Oauth2。</description>
 
     <dependencies>
         <dependency>

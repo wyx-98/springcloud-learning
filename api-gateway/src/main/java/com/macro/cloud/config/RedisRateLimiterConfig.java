@@ -15,6 +15,10 @@ public class RedisRateLimiterConfig {
 //        return exchange -> Mono.just(exchange.getRequest().getQueryParams().getFirst("username"));
 //    }
 
+    /**
+     * 其中的ｅｘｃｈａｎｇｅ为ServerWebExchange
+     * @return
+     */
     @Bean
     public KeyResolver ipKeyResolver() {
         return exchange -> Mono.just(exchange.getRequest().getRemoteAddress().getHostName());

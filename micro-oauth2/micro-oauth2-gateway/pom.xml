@@ -10,6 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>micro-oauth2-gateway</artifactId>
+    <description>网关服务，负责请求转发和鉴权功能，整合Spring Security+Oauth2</description>
 
     <dependencies>
         <dependency>
