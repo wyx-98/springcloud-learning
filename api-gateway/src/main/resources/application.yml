@@ -6,9 +6,20 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: path_route #路由的ID
-          uri: ${service-url.user-service}/user/{id} #匹配后路由地址
+        - id: user-service1 #路由的ID
+          uri: http://localhost:8201/user/{id} #匹配后路由地址
           predicates: # 断言，路径相匹配的进行路由
             - Path=/user/{id}
+            - Weight=group1,5
+          filters:
+#            - StripPrefix=1 #去掉请求路径的前面n个部分
+        - id: user-service2 #路由的ID
+          uri: http://localhost:8202/user/{id} #匹配后路由地址
+          predicates: # 断言，路径相匹配的进行路由
+            - Path=/user/{id}
+            - Weight=group1,95
+          filters:
+#            - StripPrefix=1 #去掉请求路径的前面n个部分
+
 #  profiles:
 #    active: eureka
