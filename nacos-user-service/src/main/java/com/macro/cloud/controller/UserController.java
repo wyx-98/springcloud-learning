@@ -59,4 +59,8 @@ public class UserController {
         userService.delete(id);
         return new CommonResult("操作成功", 200);
     }
+    @GetMapping
+    public CommonResult get(){
+        return new CommonResult("xxxxxxxxx");
+    }
 }

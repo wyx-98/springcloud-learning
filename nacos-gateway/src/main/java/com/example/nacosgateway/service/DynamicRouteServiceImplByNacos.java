@@ -45,6 +45,8 @@ public class DynamicRouteServiceImplByNacos {
             }
             String configInfo = configService.getConfig(GatewayConfig.NACOS_ROUTE_DATA_ID, GatewayConfig.NACOS_ROUTE_GROUP, GatewayConfig.DEFAULT_TIMEOUT);
             log.info("获取网关当前配置:\r\n{}",configInfo);
+//            List<RouteDefinition> definitionList;
+            //json解析
             List<RouteDefinition> definitionList = JSON.parseArray(configInfo, RouteDefinition.class);
             for(RouteDefinition definition : definitionList){
                 log.info("update route : {}",definition.toString());

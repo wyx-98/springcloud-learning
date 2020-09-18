@@ -1,21 +1,23 @@
+server:
+  port: 9102
 spring:
   application:
-    name: admin-client
+    name: nacos-gateway
   cloud:
     nacos:
       discovery:
         server-addr: localhost:8848
+        namespace: 21407b2a-b001-4802-ac24-b2d81ebbe054
         metadata:
           management:
             context-path: '${server.servlet.context-path}/actuator'
+      config:
+        server-addr: localhost:8848
+#        file-extension:
   boot:
     admin:
       client:
         url: http://localhost:9301
-server:
-  port: 9305
-  servlet:
-    context-path: '/api'
 management:
   endpoints:
     web:
@@ -24,5 +26,9 @@ management:
   endpoint:
     health:
       show-details: always
-logging:
-  file: admin-client.log #添加开启admin的日志监控
+nacos:
+  gateway:
+    route:
+      config:
+        data-id: gateway-router
+        group: DEFAULT_GROUP
