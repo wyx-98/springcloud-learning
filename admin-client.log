@@ -1,0 +1,24 @@
+2020-09-18 16:50:37.041  INFO 11022 --- [main] com.macro.cloud.AdminClientApplication   : No active profile set, falling back to default profiles: default
+2020-09-18 16:50:37.407  WARN 11022 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2020-09-18 16:50:37.428  WARN 11022 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-09-18 16:50:37.532  INFO 11022 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2bd45789-78a3-3fdc-8853-12324992de65
+2020-09-18 16:50:37.549  INFO 11022 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c6ccbb49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-18 16:50:37.674  INFO 11022 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9305 (http)
+2020-09-18 16:50:37.690  INFO 11022 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-18 16:50:37.690  INFO 11022 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2020-09-18 16:50:37.749  INFO 11022 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2020-09-18 16:50:37.749  INFO 11022 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 700 ms
+2020-09-18 16:50:38.053  INFO 11022 --- [main] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/jolokia' to jolokia-actuator-endpoint
+2020-09-18 16:50:38.077  WARN 11022 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-18 16:50:38.078  INFO 11022 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-18 16:50:38.081  WARN 11022 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-18 16:50:38.081  INFO 11022 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-18 16:50:38.238  INFO 11022 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-18 16:50:38.401  INFO 11022 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-09-18 16:50:38.446  INFO 11022 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 22 endpoint(s) beneath base path '/actuator'
+2020-09-18 16:50:38.523  INFO 11022 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9305 (http) with context path '/api'
+2020-09-18 16:50:38.554  INFO 11022 --- [main] o.s.c.a.n.registry.NacosServiceRegistry  : nacos registry, admin-client 192.168.0.185:9305 register finished
+2020-09-18 16:50:38.556  INFO 11022 --- [main] com.macro.cloud.AdminClientApplication   : Started AdminClientApplication in 2.042 seconds (JVM running for 13.184)
+2020-09-18 16:50:38.616  INFO 11022 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-18 16:50:38.617  INFO 11022 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-18 16:50:38.621  INFO 11022 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms

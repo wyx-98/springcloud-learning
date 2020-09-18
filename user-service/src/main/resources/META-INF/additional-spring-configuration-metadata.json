@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "nacos.gateway.route.config.data-id",
+      "type": "java.lang.String",
+      "description": "Description for nacos.gateway.route.config.data-id."
+  }
+] }
